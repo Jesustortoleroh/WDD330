@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
+
+@media only screen and (min-width: 320px) {
+    body {
+        font-family: 'Roboto', sans-serif;
+        max-width: 70rem;
+        margin: auto;
+        padding: 2rem;
+    }
+    header {
+        text-align: center;
+        color: #003566;
+    }
+    .cards section p {
+        color: #003566;
+        text-align: center;
+        font-size: 1rem;
+    }
+    .cards {
+        display: flex;
+        flex-flow: column;
+    }
+    .cards section {
+        background-color: #90E0EF;
+        border: 2px solid black;
+        margin: .2rem;
+        padding: .5rem;
+        width: 90%
+    }
+    .cards section h2 {
+        color: #003566;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    
+    .cards section img {
+        width: 70%;
+        max-width: 15rem;
+        margin:10px auto;
+	    display:block;
+        
+        
+    }
+    footer {
+        text-align: center;
+        background-color: #277da1;
+        color: white;
+        padding: 2rem;
+    }
+}
+
+
+
+@media only screen and (min-width: 481px) {
+
+    .cards {
+        display: flex;
+        flex-flow: row wrap;
+        margin: 1rem;
+    }
+    .cards section {
+        width: 45%;
+    }
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+
+    .cards section {
+        width: 22%;
+        
+    }
+}

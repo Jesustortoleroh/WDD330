@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Orelega+One&display=swap');
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+   
+        nav button {
+            display: none;
+            
+        }
+        nav ul.hide {
+            display: block;
+            
+        }
+       
+        nav ul li {
+            float: left;
+            
+        }
+    
+        nav ul li a {
+            border: none;
+            border-right: rgba(0,0,0,0.3);
+            padding: .08rem 1rem;
+                
+        }
+       
+		.container {
+            margin: 0 auto; 
+            display:grid; 
+            grid-template-columns: 1fr 1fr 1fr;
+              
+             
+        }
+        
+        img { width: 250px; height: auto; margin: .5rem;}
+        figcaption {
+            font-size: smaller;
+            background-color: white;
+            text-align: center;
+            
+        }
+        /* hover effect */
+        .lazy:hover {box-shadow: 0 0 50px #333;}
+        
+        h1 {
+          margin-left: 50px;  
+        }    
+
+} 
+
+
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    font-family: 'Lora', serif;
+    background-color: #70C1B3;
+    margin: 0 auto;
+    max-width: 1000px;
+	
+}
+
+header,
+nav,
+main,
+footer {
+	max-width: 800px;
+	margin: 0 auto;
+}
+header {
+	background-color: #247BA0;
+	padding: 5px ;
+	display: flex;
+	align-items:center;
+	justify-content:center;
+}
+
+header img {
+	width: 80px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h2 {
+	font-size: 1.6rem;
+	margin: 0 0 0 17px;
+}
+
+.m {
+	font-style: italic;
+	letter-spacing: 1pt;
+	color: white;
+	margin-left: 20px;
+	font-size: .9rem;
+}
+
+
+main {
+    margin: 25px;
+    
+}
+
+
+h2  {
+    font-family: 'Orelega One', cursive;
+    margin-top:1.5em;
+    padding:2px;
+    color: black;
+}
+
+footer {
+    background-color:#247BA0;
+    padding: 5px;
+    margin-top:2em;
+    border-bottom:10px;
+    color:white;
+    text-align:center;
+   
+}
+
+footer a {
+    color:white;
+  
+}
+#currentDate {
+    padding-top:0px;
+    margin-top:10px;
+    font-size:15px;
+    color: yellow;
+}
+
+.contentbox {
+    border: solid black ;
+    background-color: #F25F5C;
+    color: white;
+    
+}
+
+
+
+

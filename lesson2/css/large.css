@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500&family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width:800px;
+    margin:0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height:100%;
+}
+header {
+    padding: 0.5px;
+    background-color: #1D3557;
+    border-bottom:10px;
+    color:white;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align:center;
+    font-size:25px;
+}
+
+main {
+    margin:25px;
+}
+
+nav  {
+  background-color: #8ecae6;
+  text-align: center;
+  box-shadow: 0 2px 15px gray;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 0.75rem;
+	text-decoration: none;
+	font-size: 0.95rem;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  background-color: #F9DC5C;
+ 
+}
+
+h2  {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-top:1.5em;
+    padding:2px;
+    color: white;
+}
+
+h3 {
+    text-align: center;
+    background-color: #98b2d6;    
+    padding: 0.5em;
+    margin-bottom: 1.2em;
+    border-top: 5px double;
+    border-bottom: 5px double;
+     
+}
+
+footer {
+    background-color:#1D3557;
+    padding: 5px;
+    margin-top:2em;
+    border-bottom:10px;
+    color:white;
+    text-align:center;
+   
+}
+
+footer a {
+    color:white;
+  
+}
+#outputdata {
+    padding-top:0px;
+    margin-top:-15px;
+    font-size:15px;
+    color: yellow;
+}
+
+.colors {
+  width: 100%;
+  min-width: 350px;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+}
+.colors th {
+  background-color: #999;
+}
+.colors td{
+  width: 25%;
+  height: 3em;
+}
+.primary {
+    background-color:#247BA0 ;
+  }
+  .secondary {
+    background-color:#FFE066;
+  }
+  .accent1 {
+    background-color:#F25F5C ;
+  }
+  .accent2{
+    background-color:#70C1B3 ;
+  }
+
+  /* Typography page*/
+#header{
+    font-family: 'Orelega One', cursive;
+    font-size: 40px;
+}
+
+
+#header-1{
+    font-family: 'Orelega One', cursive;
+    font-size: 2em;
+}
+#header-2{
+    font-family: 'Orelega One', cursive;
+    font-size: 1.5em;
+}
+#navigation{
+    font-family: 'Orelega One', cursive;
+    font-size: 25px;
+}
+#body-typography{
+    font-family: 'Lora', serif;
+    font-size: 1.5em;
+}
+#footer-typography{
+    font-family: 'Orelega One', cursive;
+    font-size: 1em;
+}

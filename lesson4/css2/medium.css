@@ -1,0 +1,31 @@
+/* 35em is also 560px when basefont is 16px */
+@media only screen and (min-width: 35rem) {
+	.nav {
+		display: flex;
+		align-items: center;
+	}
+	.nav li {
+		display: block; /* change state in small view */
+		flex: 1 1 auto;
+	}
+	.nav a {
+		text-align: center;
+	}
+	.nav li:first-child {
+		display: none;
+	}
+	.contactdiv iframe {
+        width: 40%;
+        height: 15em;
+        margin:0.5em;
+    }
+    .contactdiv {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+} /*end medium */
+
+

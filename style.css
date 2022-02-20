@@ -1,0 +1,51 @@
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width:800px;
+    margin:0 auto;
+    font-family: 'Open Sans', sans-serif;
+    height:100%;
+}
+header {
+    background-color: #1D3557;
+    padding:1px;
+    border-bottom:10px;
+    color:white;
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align:center;
+    font-size:25px;
+}
+.photo-box {
+    float:right;
+    margin:5px;
+    box-shadow:none;
+    max-height:220px;
+}
+main {
+    margin:25px;
+}
+h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+    margin-top:1.5em;
+    padding:2px;
+    color: #E63946;
+}
+
+footer {
+    background-color:#1D3557;
+    padding: 5px;
+    margin-top:2em;
+    border-bottom:10px;
+    color:white;
+    text-align:center;
+}
+
+footer a {
+    color:white;
+}
+#outputdata {
+    padding-top:0px;
+    margin-top:-15px;
+    font-size:15px;
+    color: #E63946;
+}

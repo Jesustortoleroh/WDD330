@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="The Storm Center Page in WDD 230: 
+Web Frontend Development at Brigham Young University - Idaho">
+<meta name="author" content="Jesus Tortolero">
+<title>The Storm Center Page </title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora&family=Orelega+One&display=swap" rel="stylesheet"> 
+<link href="css2/normalize.css" rel="stylesheet">
+<link href="css2/small.css" rel="stylesheet">
+<link href="css2/medium.css" rel="stylesheet">
+<link href="css2/large.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div class="banner"></div>
+ 
+	<header>
+        <picture>
+           <img src="images/Dream-Weather-Logo.png" alt="The world logo">
+        </picture>
+        <section class="headings">
+            <h2>Dream Weather</h2>
+            <div class="m">A horizon full of changes</div>
+        </section>
+ 
+    </header>
+    
+
+    <nav class="clearfix">
+        <button onclick="toggleMenu()"> &#9776;</button>
+    	<ul id = "primaryNav" class="hide">
+            <li><a href="https://jesustortoleroh.github.io/lesson-5/index.html">Home</a></li>
+            <li class="active"><a href="https://jesustortoleroh.github.io/weather/preston.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="https://jesustortoleroh.github.io/lesson4/stormcenter.html">Storm Center</a></li> 
+            <li><a href="https://jesustortoleroh.github.io/weather/gallery-7.html">Gallery</a></li>     
+        </ul>
+    </nav>
+   
+    <main>
+        <h1>Storm Center - Report a Storm</h1>
+        <form method ="get" action="thanks.html">
+            <fieldset>
+              <legend>Report Details</legend>
+             <label class="top"> Full Name:* <input type="text" name="full_name" pattern= "[a-zA-Z]+{5,}" required></label>
+             <label class="top"> Email: <input type="email" name="email" placeholder="someone@byu.edu" ></label>
+             <label class="top"> Phone:* <input type="tel" name="phone" placeholder="123-4567-8901"  required></label>             
+             <label class="top"> Zip code:* <input type="number" name="zip"  required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Storm Information</legend>
+             <label class="top">Storm date  <input type="date" name="completeDate"></label>
+             <label class="top">Storm type            
+              <input list="StormType">
+              <datalist id="StormType">
+              <option value="Flash Flood">
+              <option value="Hail">
+              <option value="Hurricane">
+              <option value="Thunderstorm">
+              <option value="Tornado"></option>
+             </datalist>
+             </label>
+             <label class="top"> Storm severity: </label>
+                <label class="flexly" for="rating"> 
+                    <input type="range" id="rating" name="severity" value="5" min="1" max="10" step="1" list="tickmarks" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                    <span id="ratingvalue">5</span> 
+                </label>
+        
+                <datalist id="tickmarks">
+                    <option value="0">
+                    <option value="1">
+                    <option value="2">
+                    <option value="3">
+                    <option value="4">
+                    <option value="5">
+                    <option value="6">
+                    <option value="7">
+                    <option value="8">
+                    <option value="9">
+                    <option value="10">
+                </datalist>
+                <label class="top">Storm region
+                    <select name="subject">
+                        <option value="">Select Region &#9662;</option>
+                        <option value="preston">Preston</option>
+                        <option value="soda">Soda Springs</option>
+                        <option value="fish">Fish Haven</option>
+                       
+                    </select>
+                   </label>
+              <div>User in-danger level</div>
+            <label class="sbs">  <input type="radio" name="audience" value="yes"> Yes </label>
+            <label class="sbs">  <input type="radio" name="audience" value="maybe"> Maybe </label>
+            <label class="sbs">  <input type="radio" name="audience" value="no"> No </label>
+
+            </fieldset>
+            <fieldset>
+                <legend>Additional information or comments</legend>
+                <p></p>
+              <label class="top"> <textarea id="comments" name="comments" rows="4" cols="50"> Enter comments here...
+                </textarea></label>
+            </fieldset>
+             <input type="submit" value="Report Storm" class="submitbtn">
+  
+  
+  
+  
+  
+  
+        </form>      
+     
+    
+        <div class = "contactdiv">
+            <section>
+            <h4>Contact Information</h4>
+            <p>📍Preston, Idaho 83263,<br> EE. UU.</p>
+            <p>✉ info@dreamweather.org</p> 
+            <p>☎ (+58) 414-0441322</p>
+            <div id = "social-media">
+            <a href="https://www.facebook.com/" target="_blank">
+            <img src="images/Facebook.png" alt="Facebook logo"></a>
+            <a href="https://twitter.com/" target="_blank">
+            <img src="images/twitter.png" alt="Twitter logo"></a>
+            <a href="https://www.instagram.com/" target="_blank">
+            <img src="images/instagram.png" alt="Instagram logo"></a>
+            </div>
+            
+            </section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d9957.915870544735!2d-111.88307362242965!3d42.096630589680935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sve!4v1624482591214!5m2!1ses!2sve" width="380" height="380" style="border:0;" allowfullscreen="" loading="lazy"></iframe>   
+        </div>   
+    </main>
+    <footer>   
+    <div class ="bar-footer">
+    <p>&copy; 2021 | Dream Weather | Attributions | Jesus Tortolero | <a href="https://www.byui.edu/online" target="_blank">BYUI Online Learning </a></p>
+    <span id="currentDate"></span> 
+    <span>  | <a href="https://jesustortoleroh.github.io/index"> Course Assignment Portal </a></span>
+    </div>
+    </footer>
+    
+    <script src="js/scripts.js"></script>
+    <script src="js/rate.js"></script>
+</body>
+</html>
